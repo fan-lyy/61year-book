@@ -7,13 +7,36 @@
                 position:absolute;
                 left:280px;
             }
+            
+            .Button{
+               /* position:absolute;*/
+                top:550px;
+                border-radius: 1em;
+                border: None;
+                width:80px;
+                height:40px;
+                bottom:0;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top:40%;
+            }
+            .l{
+                float: left;
+            }
+            .r{
+                float: right;
+            }
         </style>
         <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="./js/replace.js"></script>
     </head>
     <body>
         <div id="hsize">
-            <img src="./img/1.png" id="image" width="700px" height="550px">
+            <img src="./img/1.png" id="image" width="700px" height="540px">
+        </div>
+        <div class="UpDownBfooter">
+            <button class="Button l" onclick="uppage()"><img src="" alt="<-"></button>
+            <button class="Button r" onclick="downpage()"><img src="" alt="->"></button>
         </div>
     </body>
 </html>
