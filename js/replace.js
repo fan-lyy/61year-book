@@ -8,7 +8,7 @@ function uppage(){
     else alert("这是第一页了！");
 }
 function downpage(){
-    if(page<1)
+    if(page<2)
     {   
         page++;
         flushpage();
@@ -16,7 +16,7 @@ function downpage(){
     else alert("这是最后一页了！");
 }
 function flushpage(){
-    $("#hsize").fadeOut("slow");
+    $("#hsize").fadeOut();
     $("#image").attr("src","./img/"+page+".png");
     $("#hsize").fadeIn();
 }
