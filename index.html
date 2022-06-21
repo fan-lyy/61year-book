@@ -5,16 +5,16 @@
         <style>
             #hsize{
                 position:absolute;
-                left:280px;
+                left:25%;
+                width:50%;
+                height:97%;
             }
             
             .Button{
                /* position:absolute;*/
-                top:550px;
+                top: 90%;
                 border-radius: 45px;
                 border: None;
-                width: 90px;
-                height:90px;
                 margin-left: 10%;
                 margin-right: 10%;
                 margin-top:37%;
@@ -26,13 +26,17 @@
             .r{
                 float: right;
             }
+            .img{
+                width: 100%;
+                height:100%;
+            }
         </style>
         <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="./js/replace.js"></script>
     </head>
     <body>
         <div id="hsize">
-            <img src="./img/1.jpg" id="image" width="700px" height="540px">
+            <img class="img" src="./img/1.jpg" id="image" >
         </div>
         <div class="UpDownBfooter">
             <button class="Button l" onclick="uppage()"><img src="./img/left.png" width="78" height="78"></button>
